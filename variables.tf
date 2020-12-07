@@ -4,8 +4,20 @@ variable "peer_vpc_id" {
   default     = ""
 }
 
+variable "peer_region" {
+  description = "Peer VPC region: string"
+  type        = string
+  default     = ""
+}
+
 variable "this_vpc_id" {
   description = "This VPC ID: string"
+  type        = string
+  default     = ""
+}
+
+variable "this_region" {
+  description = "This VPC region: string"
   type        = string
   default     = ""
 }
